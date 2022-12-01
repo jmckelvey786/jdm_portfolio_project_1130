@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 :root{
     --aquamarine: #7FEFBD;
     --satingold: #CBA135;
@@ -7,7 +12,7 @@
 }
 
 body{
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 header {
@@ -44,4 +49,23 @@ header > div {
     line-height: 75px;
     font-size: 30px;
 } */
+
+.navbar {
+    background-color: var(--black);
+}
+
+.navbar > ul {
+    list-style-type: none;
+    color: var(--eggshell);
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu > li {
+    padding: 5px;
+    font-size: 18px;
+}
 
