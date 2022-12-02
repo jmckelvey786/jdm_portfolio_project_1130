@@ -17,15 +17,18 @@ body{
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 3%;
     background-color: var(--eggshell);
 }
 header > div {
-    /* border: 10px solid var(--black); */
-    width: 33%;
-    text-shadow: 10px 10px 15px var(--black);
+     /* border: 10px solid var(--black); */
+    /* width: 33%; */
+    padding: 10px;
+    margin: 20px;
+    text-shadow: 5px 5px 10px var(--black);
 }
 /* #job-title{
     text-shadow: 10px 10px 15px var(--black);
@@ -52,6 +55,7 @@ header > div {
 
 .navbar {
     background-color: var(--black);
+    padding: 5px;
 }
 
 .navbar > ul {
@@ -69,3 +73,21 @@ header > div {
     font-size: 18px;
 }
 
+.main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-flex-item {
+    background-color: var(--aquamarine);
+    padding: 10px;
+    border: 2px solid var(--pakistan-green);
+    margin: 5px;
+}
+
+.main-flex-item > img {
+    margin: 5px;
+    border: 2px solid var(--satingold);
+}
