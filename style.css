@@ -68,6 +68,21 @@ header > div {
     transform: scale(1.1);
 }
 
+.first_project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.first_project_item {
+    width: 500px;
+    background-color: var(--aquamarine);
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Due to flexbox the site is responsive and looks good on mobile */
 /* Set flex box up for the portfolio boxes */
 .main-flex {
     display: flex;
@@ -75,7 +90,6 @@ header > div {
     justify-content: center;
     padding: 20px;
 }
-
 /* portfolio box styling */
 .main-flex-item {
     background-color: var(--aquamarine);
