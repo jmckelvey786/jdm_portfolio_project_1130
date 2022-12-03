@@ -181,3 +181,18 @@ section {
     height: 5%;
 }
 
+@media only screen and (max-width: 600px) {
+    .first_project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .first_project_item {
+        background-color: var(--aquamarine);
+        padding: 10px;
+        border: 2px solid var(--pakistan-green);
+        margin: 5px;
+    }
+    
+}
