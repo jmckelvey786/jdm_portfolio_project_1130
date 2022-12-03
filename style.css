@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+/* Set some variables to keep code DRY */
 :root{
     --aquamarine: #7FEFBD;
     --satingold: #CBA135;
@@ -11,14 +12,18 @@
     --pakistan-green: #2A7221;
 }
 
+/* Used specific google fonts that I like */
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+/* Got rid of text decoration in nav bar */
 a:link, a:visited {
     color: var(--eggshell);
     text-decoration: none;
   }
 
+/* Header layout, and spacing */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -32,15 +37,18 @@ header > div {
     margin: 20px;
     text-shadow: 5px 5px 10px var(--black);
 }
+
+/*Nav bar styling*/
 .navbar {
     background-color: var(--black);
     padding: 15px;
 }
-
+/* Got rid of the unordered list icons */
 .navbar > ul {
     list-style-type: none;
     color: var(--eggshell);
 }
+/* Nav bar layout */
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -53,12 +61,14 @@ header > div {
     text-decoration: none;
 }
 
+/* Added a hover effect to menu items */
 .menu-item > a:hover {
     color: var(--satingold);
     text-shadow: 2px 2px 2px 20px var(--satingold);
     transform: scale(1.1);
 }
 
+/* Set flex box up for the portfolio boxes */
 .main-flex {
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +76,7 @@ header > div {
     padding: 20px;
 }
 
+/* portfolio box styling */
 .main-flex-item {
     background-color: var(--aquamarine);
     padding: 10px;
@@ -78,10 +89,12 @@ header > div {
     border: 2px solid var(--satingold);
 }
 
+/* hover effect on portfolio boxes */
 .main-flex-item:hover {
     transform: scale(1.1);
 }
 
+/* contact section layout */
 .contact-section {
     display: flex;
     flex-wrap: wrap;
@@ -89,9 +102,12 @@ header > div {
     align-items: center;
 }
 
-.contact-section:hover {
+/* contact section hover effect */
+.contact-section-item:hover {
     transform: scale(1.2);
 }
+
+/* contact section styling and layout */
 .contact-section-item {
     display: flex;
     flex-wrap: wrap;
@@ -103,12 +119,14 @@ header > div {
     border: 4px solid var(--black);
 }
 
+/* contact section header style */
 .contact-section-item > h2 {
     background-color: var(--aquamarine);
     padding: 10px;
     border: 3px solid var(--black);
 }
 
+/* override link auto styling */
 .contact-links {
     color:var(--black);
     text-decoration:none;
@@ -119,10 +137,7 @@ header > div {
     text-decoration: none;
 }
 
-.bottom-spacer{
-    height: 5%;
-}
-
+/* layout flexbox for the workhistory */
 section {
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +145,7 @@ section {
     margin: 20px;
 }
 
+/* styling for work history boxes */
 .Work-History {
     border: 4px solid var(--black);
     max-width: 400px;
@@ -144,3 +160,10 @@ section {
     border: 3px dotted var(--pakistan-green);
     background-color: var(--eggshell);
 }
+
+/* Created empty space at bottom of the page */
+
+.bottom-spacer{
+    height: 5%;
+}
+
