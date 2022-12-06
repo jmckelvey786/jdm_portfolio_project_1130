@@ -73,6 +73,7 @@ header > div {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 .first_project_item {
     width: 500px;
@@ -80,6 +81,7 @@ header > div {
     text-align: center;
     padding: 30px;
     margin: 20px;
+    border: 3px solid var(--black);
 }
 
 /* Due to flexbox the site is responsive and looks good on mobile */
